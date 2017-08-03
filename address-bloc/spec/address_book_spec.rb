@@ -8,7 +8,8 @@ RSpec.describe AddressBook do
     end
 
 it "initializes entries as an array" do
-  book = AddressBook.newexpect(book.entries).to be_an(Array)
+  book = AddressBook.new
+  expect(book.entries).to be_an(Array)
 end
 
 it "initializes entries as empty" do
